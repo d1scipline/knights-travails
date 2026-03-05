@@ -73,4 +73,11 @@ function knightMoves(initial, destination) {
   }
 }
 
-console.log(knightMoves([0, 0], [6, 7]));
+function printPath(array) {
+  console.log(`You made it in ${array.length - 1} moves! Here's your path:`);
+  for (item of array) {
+    console.log(item);
+  }
+}
+
+printPath(knightMoves([3, 3], [4, 3]));
