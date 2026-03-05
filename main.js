@@ -74,9 +74,10 @@ function knightMoves(initial, destination) {
 }
 
 function printPath(array) {
-  console.log(`You made it in ${array.length - 1} moves! Here's your path:`);
+  console.log(`> knightMoves([${array[0]}],[${array[array.length - 1]}])`);
+  console.log(`=> You made it in ${array.length - 1} moves! Here's your path:`);
   for (item of array) {
-    console.log(item);
+    console.log(`   [${item}]`);
   }
 }
 
